@@ -6,7 +6,7 @@ function Home() {
   return (
     <section>
       <Header />
-      <section>
+      <section className="cads-container">
         <CardPizza
           name="Napolitana"
           price={5950}

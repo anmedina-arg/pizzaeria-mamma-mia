@@ -1,0 +1,68 @@
+.card-container {
+	border: 1px solid rgb(163, 163, 163);
+	/* width: fit-content; */
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.card-image {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	font-weight: 400;
+	align-self: flex-start;
+	padding: 1rem;
+}
+
+.separator-line {
+	height: 1px;
+	width: 100%;
+	border-bottom: 1px solid rgb(163, 163, 163);
+}
+
+.ingredients-container {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.ingredients-title {
+	color: rgb(68, 68, 68);
+	font-size: 1.25rem;
+}
+
+.ingredients-list {
+	display: flex;
+	gap: 0.25rem;
+}
+
+.ingredients-items {
+	list-style: none;
+	padding-block: 0.25rem;
+}
+
+.ingredients-items>span {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.card-price {
+	font-size: 1.5rem;
+	font-weight: 400;
+	padding: 1rem;
+}
+
+.card-container-buttons {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	gap: 3rem;
+	padding: 1.5rem;
+}
