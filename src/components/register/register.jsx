@@ -33,8 +33,17 @@ function Register() {
     // Opcion con estado de error
     e.preventDefault();
 
+    // validacion de email con expresion regular
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!email || !password || !rePassword) {
       setError('Todos los campos son obligatorios');
+      return;
+    }
+
+    // validacion de email con expresion regular
+    if (!emailRegex.test(email)) {
+      setError('El email no es válido');
       return;
     }
 
@@ -59,6 +68,7 @@ function Register() {
         <input
           id="email"
           type="email"
+          // type="text" // <-- activar para mostrar la validacion con regex
           placeholder="jhon@doe.com"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
