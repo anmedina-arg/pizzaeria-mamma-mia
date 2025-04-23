@@ -19,8 +19,8 @@ A continuación, realizaremos un proyecto con React, el cual estará dividido en
    - 3.1 Navbar
    - 3.2 Footer
    - 3.3 Home
-   - 3.3 Header
-   - 3.4 CardPizza
+   - 3.4 Header
+   - 3.5 CardPizza
 
 🧩 Requerimientos específicos
 
@@ -60,19 +60,19 @@ A continuación, realizaremos un proyecto con React, el cual estará dividido en
 
 ```jsx
 const Navbar = () => {
-const total = 25000;
-const token = false;
+   const total = 25000;
+   const token = false;
 
-return (
-// JSX aquí
-);
+   return (
+   // JSX aquí
+   );
 };
 ```
 
 ✅ Comportamiento:
-Si token es true: mostrar 🔓 Profile y 🔒 Logout
+Si `token` es true: mostrar 🔓 Profile y 🔒 Logout
 
-Si token es false: mostrar 🔐 Login y 🔐 Register
+Si `token` es false: mostrar 🔐 Login y 🔐 Register
 
 Los botones Home y Total se muestran siempre
 
