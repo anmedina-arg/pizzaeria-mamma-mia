@@ -25,8 +25,8 @@ function CardPizza({ name, price, ingredients, img }) {
       <div className="separator-line"></div>
       <span className="card-price">Precio: ${price}</span>
       <div className="card-container-buttons">
-        <button>Ver más</button>
-        <button>Añadir</button>
+        <button>👀 Ver más</button>
+        <button>🛒 Añadir</button>
       </div>
     </div>
   );
